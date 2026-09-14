@@ -1,6 +1,8 @@
 import { useState, useRef, useCallback } from "react";
 
-const API_URL = "https://igdkey-backend.vercel.app/api/chat";
+//const API_URL = "https://igdkey-backend.vercel.app/api/chat";
+const API_URL = "http://localhost:3000/api/chat";
+
 
 const initialMessage = {
     id: 1,
