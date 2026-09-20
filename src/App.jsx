@@ -79,7 +79,23 @@ const App = () => {
     <>
       <RedirectHandler />
       <ScrollToTop />
-      <Suspense fallback={null}>
+      <Suspense
+  fallback={
+    <div
+      style={{
+        minHeight: "100vh",
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+        background: "#0b0b0f",
+        color: "white",
+        fontSize: "24px",
+      }}
+    >
+      Chargement d'IGDKEY...
+    </div>
+  }
+>
         <Routes>
           <Route
             path="/"
